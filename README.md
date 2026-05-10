@@ -74,7 +74,7 @@ Configure hooks in Claude Code's `settings.json`:
     ],
     "Notification": [
       {
-        "matcher": "permission_prompt|elicitation_dialog",
+        "matcher": "elicitation_dialog",
         "hooks": [
           {
             "type": "command",
@@ -110,9 +110,7 @@ Configure hooks in Claude Code's `settings.json`:
 **Matcher Configuration:**
 
 The `matcher` field filters which notifications trigger the hook:
-- `permission_prompt`: Triggers when Claude needs permission
 - `elicitation_dialog`: Triggers when Claude needs user input
-- Use `|` to combine multiple conditions
 
 ## How It Works
 

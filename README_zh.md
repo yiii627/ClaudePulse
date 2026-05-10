@@ -74,7 +74,7 @@ Register-PSRepository -Default
     ],
     "Notification": [
       {
-        "matcher": "permission_prompt|elicitation_dialog",
+        "matcher": "elicitation_dialog",
         "hooks": [
           {
             "type": "command",
@@ -110,9 +110,7 @@ Register-PSRepository -Default
 **Matcher 配置说明：**
 
 `matcher` 字段用于过滤哪些通知会触发 Hook：
-- `permission_prompt`：当 Claude 需要权限时触发
 - `elicitation_dialog`：当 Claude 需要用户输入时触发
-- 使用 `|` 组合多个条件
 
 ## 工作原理
 
